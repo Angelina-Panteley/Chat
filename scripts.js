@@ -15,7 +15,7 @@ function changeLogin()
   function addRow() {
           
    var myName = document.getElementById("mail");
-   if(myName != "")
+   if(myName != ''
  {  var table = document.getElementById("myTableData");
    if(document.getElementById('login').value=="")
 {
