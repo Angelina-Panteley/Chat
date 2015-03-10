@@ -24,7 +24,7 @@ function changeLogin()
     {      
    	 var rowCount = table.rows.length;
    	 var row = table.insertRow(rowCount);
-	 row.insertCell(0).innerHTML= '<input class="button5" type="submit" value ="" onClick="Javacsript:deleteRow(this)" title="Удалить сообщение" style="background: url(http://www.defaulticon.com/sites/default/files/styles/icon-front-page-32x32-preview/public/field/image/eraser.png?itok=ohy0hMWI) center center no-repeat;"></input>';//<input type="button" value = "Delete" onClick="Javacsript:deleteRow(this)">';
+	 row.insertCell(0).innerHTML= '<input class="button5" type="submit" value ="" onClick="Javacsript:deleteRow(this)" title="Удалить сообщение" style="background: url(https://pp.vk.me/c625319/v625319210/200a2/rdrQ1BSBNVw.jpg) center center no-repeat;"></input>';//<input type="button" value = "Delete" onClick="Javacsript:deleteRow(this)">';
   	 row.insertCell(1).innerHTML= '<input class="button5" onClick="Javacsript:editRow(this)" type="submit" title="Редактировать сообщение" value="" style="background: url(http://www.defaulticon.com/sites/default/files/styles/icon-front-page-32x32-preview/public/field/image/edit.png?itok=nb2eY85A) center center no-repeat;"></input>';//<input type="button" value = "Edit" onClick="Javacsript:editRow(this)">';
 	 row.insertCell(2).innerHTML = document.getElementById('login').value+":";
  	 row.insertCell(3).innerHTML = myName.value;  
