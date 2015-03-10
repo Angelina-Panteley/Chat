@@ -15,6 +15,8 @@ function changeLogin()
   function addRow() {
           
    var myName = document.getElementById("mail");
+   if(myName.value != "")
+   {
    var table = document.getElementById("myTableData");
    if(document.getElementById('login').value=="")
 {
@@ -51,7 +53,7 @@ index=-1;
 // tableContent+="<td width=40% >"+"<font color='black' align='right' size=4px style='vertical-align:'top';'>"+"<b>"+document.getElementById('login').value+":"+"</b>"+"</font>"+"<br>"+myMail.value+"</td>";
 // myTableData.innerHTML+=tableContent;
  document.getElementById('mail').value='';
-}
+}}
  
 function deleteRow(obj) {
       
