@@ -26,11 +26,11 @@
   input.button5 {
     display: inline-block;
     margin: 2px;
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     background: #CC0052;
     cursor: pointer;
-    border-radius: 30%;
+    border-radius: 50%;
     box-shadow: 0 -3px #660029 inset;
     transition: 0.2s;
 
