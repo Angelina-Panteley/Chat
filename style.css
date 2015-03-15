@@ -1,4 +1,16 @@
 <style>
+input.in{
+   background: #FFE3AE;
+   color: #BB285C;
+   border: 2px dashed #CC0052;
+}
+.message {
+	float: left;
+	width: 97%;
+	height: auto;
+	margin-bottom: 1%;
+	border-bottom: thin solid #D5D5D5;
+}
    body{}
    table{}
    
