@@ -37,7 +37,7 @@ input.in{
   
   input.button5 {
     display: inline-block;
-    margin: 2px;
+    margin: 0px;
     width: 35px;
     height: 35px;
     background: #CC0052;
