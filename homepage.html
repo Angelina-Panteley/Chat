@@ -1,22 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<body onload="load()">
-<script src="scripts.js"></script>
+
 <link rel="stylesheet" type ="text/css" href="style.css">
-<style>
-input.in{
-   background: #FFE3AE;
-   color: #BB285C;
-   border: 2px dashed #CC0052;
-}
-</style>
+<script src="volod.js"></script>
 </head>
 <title>SweetChat</title></head>
-<body onload="load()">
 
-<body background="https://pp.vk.me/c621816/v621816487/12e92/0r6FQ5yHksg.jpg";>
-
+<body  onload="run1();" background="https://pp.vk.me/c621816/v621816487/12e92/0r6FQ5yHksg.jpg";>
+<section class="chat">
 <table width="100%"  align = center cellpadding=8px >
     
     <caption align="center" ><h1 id="loginChanged">Welcome to SweetChat!</h1><caption>
@@ -29,33 +21,18 @@ input.in{
           <p><input id="login" type="text" class="in" name="никнейм" placeholder="Логин" maxlength="10" size="20" ></p>
           <a href="#" id="loginButton" type="button"  class="button" onclick="changeLogin()">Сохранить</a>
 		  </div>
-          <p style="color:#FFCCCC;">Введите информацию о себе:</p>
-          <p><textarea name="info"></textarea></p>
-          <a href="#" id="loginButton" type="button"  class="button" onclick="changeLogin()">Сохранить</a>
-          <p style="color:#FFCCCC;">Выберите собеседника</p>
-          <p><select multiple name="hero[]" style="width:170px;">
-    
-          <option value="Чебурашка">Чебурашка</option>
-          <option selected value="Крокодил Гена">Крокодил Гена</option>
-          <option value="Шапокляк">Шапокляк</option>
-          <option value="Крыса Лариса">Крыса Лариса</option>
-          </select></p>
-          <a href="#" id="loginButton" type="button"  class="button" onclick="changeLogin()">Выбрать</a>
           </fieldset>
        </form>
 	   </td>
 	   
        <td colspan=4 align=center>
-       <div id="mydata" STYLE="overflow: scroll;  width:800px; height:350px;background-color:#FFE3AE ;">
-        <table id="myTableData"  cellpadding="1" style="background-color:#FFE3AE ;   width:100%;table-layout: fixed;">
-	   
-       </table>
+       <div id="messages" class="items" STYLE="overflow: scroll;  width:800px; height:350px;background-color:#FFE3AE ;">
        &nbsp;
        </div>
 	   </td>
 
-       <td style="width:120px;">
-          <img id="myImage" title="Connection with the server" onclick="changeImage()" src="https://pp.vk.me/c623219/v623219487/1ff4f/NRLTHIQcXvk.jpg" width="50" height="90">
+       <td style="width:120px;"><!--временно для индикации доступа сервера-->
+          <img id="myImage" title="Connection with the server" onclick="Javascript:changeImage()" src="https://pp.vk.me/c623219/v623219487/1ff4f/NRLTHIQcXvk.jpg" width="50" height="90">
        </td>
 	   
     </tr>
@@ -63,26 +40,22 @@ input.in{
   <tr>
 
     <td></td>
+	
     <td colspan=2 align = right> 
-        <p><textarea id="mail" name="info"; style="width: 500px;height: 100px; " ></textarea></p>
+	
+    <p><textarea id="mailText" name="info"; style="width: 500px;height: 100px; " ></textarea></p>
     </td>
-    <td style="width: 300px;"><p><input class="button6" type="submit" name="next"  value="Отправить" onclick="Javascript:addRow()" style="height: 80px;"  ></input></p>
+    <td style="width: 300px;"><p><input class="button6" type="submit" id="addButton" name="next"  value="Отправить" onclick="Javascript:addRow()" style="height: 80px;"  ></input></p>
     </td>
+	
     <td></td>
 
   </tr>
 
 </table>
-<script>
-function changeImage() {
-    var image = document.getElementById('myImage');
-    if (image.src.match("https://pp.vk.me/c623219/v623219487/1ff56/QTx1y06hllA.jpg")) {
-        image.src = "https://pp.vk.me/c623219/v623219487/1ff4f/NRLTHIQcXvk.jpg";
-    } else {
-        image.src = "https://pp.vk.me/c623219/v623219487/1ff56/QTx1y06hllA.jpg";
-    }
-}
-</script>
+</section>
+
 </body>
+
 </html>
 
