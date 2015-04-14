@@ -86,18 +86,13 @@ function addMailInternal(message) {
 function createItem(mes){
     var message = document.createElement('div');
 	message.innerHTML = '<table><tr><td style="width:25%"><b>' + mes.user + ':</b></td>                      <td width=70% style="word-wrap: break-word" >' + mes.description + '</td>                      <td style="padding-left: 5px">                                            <img src="http://www.defaulticon.com/sites/default/files/styles/icon-front-page-32x32-preview/public/field/image/edit.png?itok=nb2eY85A" onClick="editMessage()" style="cursor: pointer"></img>                      <img src="http://www.defaulticon.com/sites/default/files/styles/icon-front-page-32x32-preview/public/field/image/eraser.png?itok=ohy0hMWI" onClick="deleteMessage()" style="cursor: pointer"</img>                      </td></tr></table>';
-	//'<div class="item strikeout" data-task-id="идентификатор">'+'описание задачи</div>'
+
 	message=message.firstChild;
-   // updateItem(message, mes);
+
      message.setAttribute('data-task-id', mes.id);
 	return message;
 }
-function updateItem(divItem, mes){
-    divItem.classList.remove('strikeout');
-	divItem.firstChild.checked = false;
-	divItem.setAttribute('data-task-id', mes.id);
-	divItem.lastChild.textContent = mes.description;
-}
+
 function deleteMessage()
 {
 	var toDelete = event.target;
